@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Student Form </title>
+<link href="css/style.css" rel="stylesheet" > 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+</head>
+<body>
+<div class='container'>
+	<div class="p-2 bg-light border">		
+		<!-- Nav -->
+		<div class='container'>
+		<div class="p-2 bg-light border">
+			<nav class="navbar navbar-expand-lg bg-light">
+		      <div class="container-fluid">
+		        <a class="navbar-brand" href="#">Navbar scroll</a>
+		        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+		          <span class="navbar-toggler-icon"></span>
+		        </button>
+		        <div class="collapse navbar-collapse" id="navbarScroll">
+		          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+		            <li class="nav-item">
+		              <a class="nav-link active" aria-current="page" href="index.jsp">Home</a>
+		            </li>
+		            <li class="nav-item">
+		              <a class="nav-link" href="#">Link</a>
+		            </li>
+		            <li class="nav-item dropdown">
+		              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+		                Link
+		              </a>
+		              <ul class="dropdown-menu">
+		                <li><a class="dropdown-item" href="#">Action</a></li>
+		                <li><a class="dropdown-item" href="#">Another action</a></li>
+		                <li><hr class="dropdown-divider"></li>
+		                <li><a class="dropdown-item" href="#">Something else here</a></li>
+		              </ul>
+		            </li>
+		            <li class="nav-item">
+		              <a class="nav-link disabled">Link</a>
+		            </li>
+		          </ul>
+		          <form class="d-flex" role="search">
+		            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+		            <button class="btn btn-outline-success" type="submit">Search</button>
+		          </form>
+		        </div>
+		      </div>
+		    </nav></div>
+		   </div>
+		<!-- End of Nav -->
+		<a class='btn btn-info btn-lg' href='viewStudent.jsp' role='button'>View Student</a>
+		<br>
+		<h1>Add Student</h1>
+		<p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+  				<path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+			</svg> Add Studen
+		</p>
+		<form action="addStudent.jep" method='post'>
+	  		First name:<br>
+	  		<input type="text"  name="fname" class='form-control'><br>
+	  		Password:<br>
+	  		<input type="password"  name="password" class='form-control'><br>
+	  		E-mail:<br>
+	  		<input type="email"  name="email"class='form-control' ><br>
+	  		Gender:
+	  		<input type="radio"  name="gender" value='male' >Male
+	  		<input type="radio"  name="gender" value='female' >Female<br>
+	  		<br>
+	  		<br> 
+	  		Country:<br>
+	  		<input type="text"  name="country" class='form-control'><br>
+	  		<select>
+			  	<option value='Asia'>Asiua</option>
+		  		<option value='Afriak'>Afrika</option>
+				<option value='Eruopa'>Eroupa</option>
+				<option value='NorthAmerica'>North America</option>
+				<option value='SouthAmerica'>South America</option>
+			</select>
+  			<br>
+  			<br>
+ 			<input type="submit" value="addStudent" class='form-control'>
+		</form>
+	</div>
+</div>
+</body>
+</html>
